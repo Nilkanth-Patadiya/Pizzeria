@@ -1,0 +1,42 @@
+<div class="container-fluid border border-1">
+  <div class="row">
+    <div class="col">
+      <hr>
+    </div>
+    <div class="col-auto">
+      <h4 class="text-capitalize text-center">bestsellers</h4>
+    </div>
+    <div class="col">
+      <hr>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="card col-md-4" *ngFor="let p of pizzas;">
+        <img class="card-img-top" [src]="p.image" alt="Card image">
+        <div class="card-img-overlay">
+          <img src="..\assets\nonveg.png" alt="" width="35" height="35" *ngIf="(p.type!='veg')">
+          <img src="..\assets\veg.png" alt="" width="35" height="35" *ngIf="(p.type=='veg')">
+          <b class="float-end bg-secondary text-white" style="font-size: large;">&#8377;{{p.price}}</b>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title text-capitalize"> {{p.name}} </h4>
+          <p class="card-text">{{p.description}}</p>
+          <hr>
+          <b>Ingredients:</b> &nbsp;
+          <ul class="csv">
+            <li *ngFor="let i of p.ingredients">{{i.iname | titlecase}}</li>
+          </ul>
+          <hr>
+          <b>Toppings:</b> &nbsp;
+          <ul class="csv">
+            <li *ngFor="let t of p.topping">{{t.tname | titlecase}}</li>
+          </ul>
+          <hr>
+          <button (click)="flags[p.id]?remove(p):add(p)" type="button" class="btn btn-warning"
+            style="position: relative;">{{flags[p.id]?'Remove':'Add To Cart'}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

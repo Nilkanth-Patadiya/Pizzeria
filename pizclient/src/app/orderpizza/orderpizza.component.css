@@ -1,0 +1,32 @@
+ul.csv {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.csv li {
+  display: inline;
+}
+
+ul.csv li:after {
+  content: ", ";
+}
+
+ul.csv li:last-child:after {
+  content: "";
+}
+
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 31%;
+  margin: 1%;
+  padding: 0%;
+}
+
+.card-img-overlay img{
+  background-color: #fff;
+}
+
+.card>img{
+  height: 53vh;
+}

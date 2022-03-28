@@ -1,0 +1,83 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col">
+                    <hr>
+                </div>
+                <div class="col-auto">
+                    <h4 class="text-capitalize">my cart</h4>
+                </div>
+                <div class="col">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-sm-auto mt-4">
+                    <table class="table table-striped border border-3 ">
+                        <tbody>
+                            <tr class="p-3" *ngFor="let c of cart">
+                                <td><img [src]="c.image" class="cart-pizza"></td>
+                                <td>
+                                    <img src="..\assets\nonveg.png" alt="" width="27" height="27" *ngIf="(c.type!='veg')">
+                                    <img src="..\assets\veg.png" alt="" width="27" height="27" *ngIf="(c.type=='veg')">
+                                </td>
+                                <td>
+                                    <b class="text-capitalize">{{c.name}}</b> <br>
+                                    <span>&#8377;{{c.price}}</span>
+                                </td>
+                                <td>
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class=" btn  btn-default" (click)="onMinus(c)">
+                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                            </button>
+                                        </span>
+                                        <input type="text"
+                                            class="form-control input-number" [value]="c.qty" min="1" max="100">
+                                        <span class="input-group-btn">
+                                            <button type="button" class=" btn btn-default" (click)="onPlus(c)">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>&#8377;{{c.qty*c.price}}</td>
+                                <td>  <button class="btn" (click)="remove(c)"><i class="fa fa-trash text-danger"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"><span class="float-end">Sub Total:&nbsp; &#8377;{{total}}</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+
+
+        <div class=" col-md-4 mtop">
+            <div class="card  border border-3">
+                <div class="card-header">
+                    <h5>Payment Details</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">Pizza <span class="float-end">&#8377;{{total}}</span></li>
+                        <li class="list-group-item">Toppings <span class="float-end">&#8377;{{toppingtotal}}</span></li>
+                    </ul>
+                </div>
+                <div class="card-footer">Total Amount: <b class="float-end">&#8377;{{total + toppingtotal}}</b></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 mt-3 text-center">
+                    <button type="button" class="btn btn-warning" (click)="paylo()">Pay</button>
+                </div>
+                <div class="col-sm-6 mt-3 text-center">
+                    <button type="button" class="btn btn-dark" (click)="clear()" >Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

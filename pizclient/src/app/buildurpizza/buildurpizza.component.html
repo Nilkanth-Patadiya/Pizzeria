@@ -1,0 +1,44 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+        <div class="col-auto">
+            <h4 class="text-capitalize text-center">build your pizza</h4>
+        </div>
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+    <p class="text-center">Make your own Pizza by choosing Toppings and Ingredients from Below</p>
+    <table class=" table table-striped border border-2">
+        <thead>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of toppings">
+                <td> <img [src]="t.image" width="100px" height="100px"></td>
+                <td><b>{{t.tname}} &nbsp; &#8377;{{t.price}}</b></td>
+                <td>
+                    <div class="form-check">
+                        <input type="checkbox"  autocomplete="off" [checked]="flags[t.id]"  class="form-check-input" (change)="checkUncheck($event,t)" >
+                        <label class="form-check-label">
+                            Add
+                        </label>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-4">
+            <button type="button" class="btn btn-dark text-warning" (click)="getTotal()">Confirm Selections</button>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4">
+            <b>
+                <h6 class="float-end">Total Price:&#8377;{{toppingtotal}}</h6>
+            </b>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,58 @@
+.bodyjevu {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #0a1821;
+    height: 100vh !important;
+    width: 100vw !important;
+    font-family: Roboto, Arial, sans-serif !important;
+    color: #fff !important;
+    text-align: center !important;
+  }
+  .not-found {
+    width: 560px !important;
+    height: 225px !important;
+    margin-right: -10px !important;
+  }
+  .starry-sky {
+    display: block !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover !important;
+  }
+  .search-icon {
+    display: inline-block;
+  }
+  .notfound-copy {
+    color: #fff !important;
+    position: fixed !important;
+    top: 25px !important;
+    right: 10% !important;
+    text-align: right !important;
+  }
+  h1 {
+     font-weight: 700 !important;
+    font-size: 40px !important;
+  }
+  a {
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 1.5px solid #5581d4;
+    text-decoration: none;
+  }
+  a:hover {
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+  }
+  /* change to alternating star opacities */
+  .all-stars {
+    animation: blinkblink 7s linear infinite;
+  }
+  
+  @keyframes blinkblink {  
+    50% { opacity: 0.1; }
+  }
+  
+ 
+  
