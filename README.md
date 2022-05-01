@@ -1,31 +1,47 @@
-
 <h1 align="center">Pizzeria | MEAN Web App</h1>
 
-
-
-<p> This is a MEAN Stack Web Application Project , Created For Learning & Demo Purposes.
-    <br> 
-</p>
+<p> This is a MEAN Stack Web Application Project , Created For Learning & Demo Purposes.</p>
 
 ## 📝 Table of Contents
 
 - [About](#about)
+- [Screenshots](#screenshots)
 - [Getting Started](#getting_started)
 - [Built Using](#built_using)
 - [Authors](#authors)
-
 
 ## 🧐 About <a name = "about"></a>
 
 - Pizzeria is a **MEAN Stack** web application where users book pizza online.
 - The Pizzeria home page provides an 
 overview of the organization.
-
 - The Users can choose from the existing menu and 
 order pizzas.
 - The Users can also customize their pizza by 
 choosing ingredients.
 - The Shopping Cart page provides an overview of the order.
+
+## 🖼️ Screenshots <a name = "screenshots"></a>
+<details>
+  <summary>Click To Show Screenshots</summary>
+
+  ### Home
+    
+    ![image](https://user-images.githubusercontent.com/71023483/166135230-ede1247a-ed20-4f01-a2e1-ecd3a7d7029e.jpeg)
+
+  ### Order Pizza
+    
+    ![image](https://user-images.githubusercontent.com/71023483/166135257-60d37a89-092a-4cf1-90c8-505b87f70cad.jpeg)
+
+  ### Build Your Pizza
+    
+    ![image](https://user-images.githubusercontent.com/71023483/166135268-f73f62c6-4b74-4991-a234-36da9751b11f.jpeg)
+
+  ### Shopping Cart
+    
+    ![image](https://user-images.githubusercontent.com/71023483/166135280-bdf4f347-5464-4de9-ad5f-e685c29f4bfd.jpeg)
+
+</details>
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -35,7 +51,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Make sure you have installed all of the following prerequisites on your development machine:
 
-* Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
+* Git - [Download & Install Git](https://git-scm.com/downloads), OSX and Linux machines typically have this already installed.
 * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
 * MongoDB - [Download & Install MongoDB](http://www.mongodb.org/downloads), and make sure it's running on the default port (27017).
 * Angular - Make sure you've installed Node.js and npm first, then install Angular globally using npm:
@@ -107,11 +123,6 @@ Using MongoDB Compass GUI Tool do the following:
    The application should then compile successfully and you should see  message like **"Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/"**.
 
 5) Congratulations now you have a working pizza app, Bravo!!
-
-
-
-
-
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
