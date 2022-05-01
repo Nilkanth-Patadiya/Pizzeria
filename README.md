@@ -26,20 +26,16 @@ choosing ingredients.
   <summary>Click To Show Screenshots</summary>
 
   ### Home
-    
-    ![image](https://user-images.githubusercontent.com/71023483/166135230-ede1247a-ed20-4f01-a2e1-ecd3a7d7029e.jpeg)
+![image](https://user-images.githubusercontent.com/71023483/166135230-ede1247a-ed20-4f01-a2e1-ecd3a7d7029e.jpeg)
 
   ### Order Pizza
-    
-    ![image](https://user-images.githubusercontent.com/71023483/166135257-60d37a89-092a-4cf1-90c8-505b87f70cad.jpeg)
+![image](https://user-images.githubusercontent.com/71023483/166135257-60d37a89-092a-4cf1-90c8-505b87f70cad.jpeg)
 
   ### Build Your Pizza
-    
-    ![image](https://user-images.githubusercontent.com/71023483/166135268-f73f62c6-4b74-4991-a234-36da9751b11f.jpeg)
+![image](https://user-images.githubusercontent.com/71023483/166135268-f73f62c6-4b74-4991-a234-36da9751b11f.jpeg)
 
   ### Shopping Cart
-    
-    ![image](https://user-images.githubusercontent.com/71023483/166135280-bdf4f347-5464-4de9-ad5f-e685c29f4bfd.jpeg)
+![image](https://user-images.githubusercontent.com/71023483/166135280-bdf4f347-5464-4de9-ad5f-e685c29f4bfd.jpeg)
 
 </details>
 
