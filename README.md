@@ -1,6 +1,6 @@
 <h1 align="center">Pizzeria | MEAN Web App</h1>
 
-<p> This is a MEAN Stack Web Application Project , Created For Learning & Demo Purposes.</p>
+<p> This is a pizza ordering web application that is built with the MEAN stack, which consists of MongoDB, Express, Angular, and Node.js.</p>
 
 ## 📝 Table of Contents
 
@@ -12,14 +12,14 @@
 
 ## 🧐 About <a name = "about"></a>
 
-- Pizzeria is a **MEAN Stack** web application where users book pizza online.
-- The Pizzeria home page provides an 
+- Pizzeria is a **MEAN Stack** web application where users order pizza online.
+- Home page provides an 
 overview of the organization.
-- The Users can choose from the existing menu and 
+- Users can choose from the existing menu and 
 order pizzas.
-- The Users can also customize their pizza by 
+- Users can also customize their pizza by 
 choosing ingredients.
-- The Shopping Cart page provides an overview of the order.
+- Shopping Cart page provides an overview of the order.
 
 ## 🖼️ Screenshots <a name = "screenshots"></a>
 <details>
@@ -66,56 +66,40 @@ Using MongoDB Compass GUI Tool do the following:
 
 ### **Starting Back-End Node Server** :
 
-1) Download or clone the code from this repository.
+1) Download or clone the code from this repository. If you download as a zip file, be sure to unzip it.
 
-   If you download as a zip file, be sure to unzip it.
-
-2) Navigate to the pizserver folder.
-
-   There should be a package.json file in this folder.
+2) Navigate to the pizserver folder, there should be a package.json file in this folder.
 
 3) In a command window (or the Command prompt in VS Code), type below command.
-
     ```
     npm install
     ```
-
    This creates a **node_modules** folder and installs all packages from the package.json file into that folder. You may see a few warnings during this process, but you should not see any errors.
    
 4) In the same command window (or the Command property in VS Code), type 
-
     ```
     npm start
     ```
-
    The application should then compile successfully and you should see  message like **"Connected to mongodb via mongoose"** in same window.
 
 5) Go to Browser like Chrome/Edge and type this URL **http://localhost:3000/pizzas** & **http://localhost:3000//toppings** , you should get the response json from DB.
 
 ### **Starting Angular Dev Server** :
 
-1) Download or clone the code from this repository.
+1) Download or clone the code from this repository. If you download as a zip file, be sure to unzip it.
 
-   If you download as a zip file, be sure to unzip it.
-
-2) Navigate to the pizclient folder.
-
-   There should be a package.json file in this folder.
+2) Navigate to the pizclient folder, there should be a package.json file in this folder.
 
 3) In a command window (or the Command prompt in VS Code), type below command.
-
     ```
     npm install
     ```
-
    This creates a **node_modules** folder and installs all packages from the package.json file into that folder. You may see a few warnings during this process, but you should not see any errors.
    
 4) In the same command window (or the Command property in VS Code), type 
-
     ```
     ng serve
     ```
-
    The application should then compile successfully and you should see  message like **"Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/"**.
 
 5) Congratulations now you have a working pizza app, Bravo!!
